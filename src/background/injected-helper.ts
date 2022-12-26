@@ -25,7 +25,7 @@ const openComponentInEditor = (tabId: number) => {
         fiberNodeInstance = element[key]
       }
     }
-    const { _debugSource } = fiberNodeInstance
+    const { _debugSource } = fiberNodeInstance ?? {}
     if (_debugSource) return _debugSource
     return getFallbackDebugSourceFromElement(parentElement)
   }
@@ -48,11 +48,11 @@ const openComponentInEditor = (tabId: number) => {
   const getDebugSource = (element: HTMLElement) => {
     let fiberNodeInstance: FiberNode
     for (const key in element) {
-      if (key.startsWith("__reactInternalInstance")) {
+      if (key.startsWith("__reactInternalInstance") || key.startsWith("__reactFiber$")) {
         fiberNodeInstance = element[key]
       }
     }
-    const { _debugSource } = fiberNodeInstance
+    const { _debugSource } = fiberNodeInstance ?? {}
     if (_debugSource) return _debugSource
     const fallbackDebugSource = getFallbackDebugSource(
       fiberNodeInstance,
