@@ -20,6 +20,7 @@ chrome.storage.local.get(["editor"], ({ editor }) => {
         }://file/${fileName}:${lineNumber}:${columnNumber}`
       }
       const iframe = document.createElement("iframe")
+      iframe.style.display = 'none';
       iframe.src = url
       document.body.appendChild(iframe)
       setTimeout(() => {
