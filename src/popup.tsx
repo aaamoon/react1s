@@ -1,4 +1,11 @@
-import { Box, ChakraProvider, Radio, RadioGroup, Stack } from "@chakra-ui/react"
+import {
+  Box,
+  ChakraProvider,
+  Link,
+  Radio,
+  RadioGroup,
+  Stack
+} from "@chakra-ui/react"
 import { useEffect, useState } from "react"
 
 type Editor = "vscode" | "vscode-insiders" | "webStorm"
@@ -28,10 +35,18 @@ function App() {
     window.close()
   }
 
+  const handleGoGithub = () => {
+    chrome.tabs.create({
+      url: "https://github.com/aaamoon/react1s"
+    })
+  }
+
   return (
     <ChakraProvider>
       <Box w={300} h={150} p={4}>
-        <Box fontSize={20}>Please choose your editor :</Box>
+        <Box fontSize={20} mb={2}>
+          Please choose your editor :
+        </Box>
         <RadioGroup
           onChange={handleChangeEditor}
           value={editor}
@@ -42,6 +57,15 @@ function App() {
             <Radio value="webStorm">WebStorm</Radio>
           </Stack>
         </RadioGroup>
+        <Link
+          fontSize={16}
+          mt={1}
+          mb={2}
+          float="right"
+          color="green"
+          onClick={handleGoGithub}>
+          react1s
+        </Link>
       </Box>
     </ChakraProvider>
   )
