@@ -4,7 +4,7 @@
 ![](/assets/tutorial.gif)
 
 
-### USAGE
+### 使用
 安装地址： [chrome应用商店](https://chrome.google.com/webstore/detail/react1s/gpcoahaomdfmekggblkckofkgjggnjlp)
 
 ps: 可能有部分朋友连接不上chrome应用商店，可以将本项目中build文件夹中的zip包下载然后自行本地上传到浏览器拓展中
