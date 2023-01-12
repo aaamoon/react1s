@@ -21,7 +21,7 @@ const openComponentInEditor = (tabId: number) => {
     }
     let fiberNodeInstance: FiberNode
     for (const key in element) {
-      if (key.startsWith("__reactInternalInstance")) {
+      if (key.startsWith("__reactInternalInstance") || key.startsWith("__reactFiber$")) {
         fiberNodeInstance = element[key]
       }
     }
