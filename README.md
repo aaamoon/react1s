@@ -1,5 +1,5 @@
 
-支持React项目本地开发时<kbd>Option+Click</kbd> 页面上对应元素即可跳转到编辑器对应组件行列。
+支持React项目本地开发时<kbd>Option(Alt)+Click</kbd> 页面上对应元素即可跳转到编辑器对应组件行列。
 
 ![](/assets/tutorial.gif)
 
@@ -15,6 +15,6 @@ ps: 可能有部分朋友连接不上chrome应用商店，可以将本项目中b
 
 
 ### QA
->Q: Option+Click不起作用
+>Q: Option(Alt)+Click不起作用
 >
 >A: 对于一些比较旧的React项目，babel 配置可能需要[@babel/plugin-transform-react-jsx-source](https://babeljs.io/docs/en/babel-plugin-transform-react-jsx-source)支持

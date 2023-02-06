@@ -61,7 +61,7 @@ const openComponentInEditor = (tabId: number) => {
     return fallbackDebugSource
   }
 
-  // Option + Click
+  // Option(Alt) + Click
   window.addEventListener("click", (event) => {
     event.stopPropagation()
     if (event.altKey) {
