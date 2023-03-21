@@ -57,7 +57,7 @@ function App() {
             <Radio value="webStorm">WebStorm</Radio>
           </Stack>
         </RadioGroup>
-        <Link
+        {/* <Link
           fontSize={16}
           mt={1}
           mb={2}
@@ -65,7 +65,7 @@ function App() {
           color="green"
           onClick={handleGoGithub}>
           react1s
-        </Link>
+        </Link> */}
       </Box>
     </ChakraProvider>
   )
