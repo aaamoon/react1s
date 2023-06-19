@@ -18,3 +18,7 @@ ps: 可能有部分朋友连接不上chrome应用商店，可以将本项目中b
 >Q: Option(Alt)+Click不起作用
 >
 >A: 对于一些比较旧的React项目，babel 配置可能需要[@babel/plugin-transform-react-jsx-source](https://babeljs.io/docs/en/babel-plugin-transform-react-jsx-source)支持
+
+### 参考项目
+
+[click-to-component](https://github.com/ericclemmons/click-to-component)
