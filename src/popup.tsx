@@ -4,7 +4,8 @@ import {
   Link,
   Radio,
   RadioGroup,
-  Stack
+  Stack,
+  Kbd
 } from "@chakra-ui/react"
 import { useEffect, useState } from "react"
 
@@ -43,9 +44,10 @@ function App() {
 
   return (
     <ChakraProvider>
-      <Box w={300} h={150} p={4}>
+      <Box w={320} h={150} p={4}>
+        <Box mb={2}>按住 <Kbd>⌥ Option(Alt)</Kbd> 同时鼠标左键点击页面元素</Box>
         <Box fontSize={20} mb={2}>
-          Please choose your editor :
+          请选择代码编辑器
         </Box>
         <RadioGroup
           onChange={handleChangeEditor}
@@ -57,7 +59,7 @@ function App() {
             <Radio value="webStorm">WebStorm</Radio>
           </Stack>
         </RadioGroup>
-        {/* <Link
+        <Link
           fontSize={16}
           mt={1}
           mb={2}
@@ -65,7 +67,7 @@ function App() {
           color="green"
           onClick={handleGoGithub}>
           react1s
-        </Link> */}
+        </Link>
       </Box>
     </ChakraProvider>
   )
