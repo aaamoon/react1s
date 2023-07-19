@@ -1,7 +1,7 @@
 {
   "name": "react1s",
   "displayName": "React1s",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "点击页面元素跳转到编辑器",
   "scripts": {
     "dev": "plasmo dev",

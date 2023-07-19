@@ -10,7 +10,7 @@
 ps: 可能有部分朋友连接不上chrome应用商店，可以将本项目中build文件夹中的zip包下载然后自行本地上传到浏览器拓展中
 
 ### 插件配置
-目前支持 VS Code、VS Code-insiders、WebStorm，默认配置是VS Code，可点击插件选项调整配置
+目前支持 VS Code、VS Code-insiders、WebStorm 和自定义路径，默认配置是VS Code，可点击插件选项调整配置
 ![编辑器配置](/assets/editor.png)
 
 
