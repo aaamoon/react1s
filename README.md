@@ -21,6 +21,10 @@ ps: 可能有部分朋友连接不上chrome应用商店，可以将本项目中b
 >
 >A: 对于一些比较旧的React项目，babel 配置可能需要[@babel/plugin-transform-react-jsx-source](https://babeljs.io/docs/en/babel-plugin-transform-react-jsx-source)支持
 
+>Q: 在 WSL2 环境中如何使用
+>
+>A: 编辑器配置选择自定义路径，然后填入 `vscode://vscode-remote/wsl+Ubuntu/${fileName}:${lineNumber}:${columnNumber}`，其中的 Ubuntu 可替换成自己的 WSL2 发行版名称
+
 ### 参考项目
 
 [click-to-component](https://github.com/ericclemmons/click-to-component)
