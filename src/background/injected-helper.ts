@@ -21,7 +21,10 @@ const openComponentInEditor = (tabId: number) => {
     }
     let fiberNodeInstance: FiberNode
     for (const key in element) {
-      if (key.startsWith("__reactInternalInstance") || key.startsWith("__reactFiber$")) {
+      if (
+        key.startsWith("__reactInternalInstance") ||
+        key.startsWith("__reactFiber$")
+      ) {
         fiberNodeInstance = element[key]
       }
     }
@@ -47,8 +50,23 @@ const openComponentInEditor = (tabId: number) => {
 
   const getDebugSource = (element: HTMLElement) => {
     let fiberNodeInstance: FiberNode
+    // 支持 Vue3
+    if (
+      element["__vueParentComponent"] &&
+      element["__vueParentComponent"]?.type
+    ) {
+      const { __file } = element["__vueParentComponent"]?.type ?? {}
+      return {
+        fileName: __file,
+        lineNumber: 1,
+        columnNumber: 1
+      }
+    }
     for (const key in element) {
-      if (key.startsWith("__reactInternalInstance") || key.startsWith("__reactFiber$")) {
+      if (
+        key.startsWith("__reactInternalInstance") ||
+        key.startsWith("__reactFiber$")
+      ) {
         fiberNodeInstance = element[key]
       }
     }

@@ -1,5 +1,7 @@
 
-支持React项目本地开发时<kbd>Option(Alt)+Click</kbd> 页面上对应元素即可跳转到编辑器对应组件行列。
+支持 React 项目本地开发时 <kbd>Option(Alt)+Click</kbd> 页面上对应元素即可跳转到编辑器对应组件行列。
+
+目前也支持了 Vue3 项目的跳转，不过只能跳转到文件，无法跳转到具体行列。
 
 ![](/assets/tutorial.gif)
 
