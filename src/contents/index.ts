@@ -16,12 +16,13 @@ chrome.storage.local.get(["editor"], ({ editor }) => {
         if (editor === "webStorm") {
           url = `webstorm://open?file=${fileName}&line=${lineNumber}&column=${columnNumber}`
         } else if (editor === "custom") {
-          url =
+          url = (
             customPath ??
             "vscode://file/${fileName}:${lineNumber}:${columnNumber}"
-              .replace(/\$\{fileName\}/g, fileName)
-              .replace(/\$\{lineNumber\}/g, lineNumber)
-              .replace(/\$\{columnNumber\}/g, columnNumber)
+          )
+            .replace(/\$\{fileName\}/g, fileName)
+            .replace(/\$\{lineNumber\}/g, lineNumber)
+            .replace(/\$\{columnNumber\}/g, columnNumber)
         } else {
           url = `${
             editor || "vscode"
