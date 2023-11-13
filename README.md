@@ -25,6 +25,10 @@ ps: 可能有部分朋友连接不上chrome应用商店，可以将本项目中b
 >
 >A: 编辑器配置选择自定义路径，然后填入 `vscode://vscode-remote/wsl+Ubuntu/${fileName}:${lineNumber}:${columnNumber}`，其中的 Ubuntu 可替换成自己的 WSL2 发行版名称
 
+>Q: 在 VS Code 最新版本(1.84)中使用时，控制台报错，无法跳转到编辑器，这是由于 VS Code 的跳转 url 策略更新导致的问题，临时解决方案如下
+>
+>A: 编辑器配置选择自定义路径，然后填入 `vscode://file${fileName}:${lineNumber}:${columnNumber}`
+
 ### 参考项目
 
 [click-to-component](https://github.com/ericclemmons/click-to-component)
