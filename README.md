@@ -13,7 +13,7 @@ ps: 可能有部分朋友连接不上chrome应用商店，可以将本项目中b
 
 ### 插件配置
 目前支持 VS Code、VS Code-insiders、WebStorm 和自定义路径，默认配置是VS Code，可点击插件选项调整配置
-![编辑器配置](/assets/editor.png)
+![插件配置面板](/assets/editor.png)
 
 
 ### QA
@@ -23,11 +23,11 @@ ps: 可能有部分朋友连接不上chrome应用商店，可以将本项目中b
 
 >Q: 在 WSL2 环境中如何使用
 >
->A: 编辑器配置选择自定义路径，然后填入 `vscode://vscode-remote/wsl+Ubuntu/${fileName}:${lineNumber}:${columnNumber}`，其中的 Ubuntu 可替换成自己的 WSL2 发行版名称
+>A: 在插件配置面板选择自定义路径，然后填入 `vscode://vscode-remote/wsl+Ubuntu/${fileName}:${lineNumber}:${columnNumber}`，其中的 Ubuntu 可替换成自己的 WSL2 发行版名称
 
 >Q: 在 VS Code 最新版本(1.84)中使用时，控制台报错，无法跳转到编辑器，这是由于 VS Code 的跳转 url 策略更新导致的问题，临时解决方案如下
 >
->A: 编辑器配置选择自定义路径，然后填入 `vscode://file${fileName}:${lineNumber}:${columnNumber}`
+>A: 在插件配置面板选择自定义路径，然后填入 `vscode://file${fileName}:${lineNumber}:${columnNumber}`
 
 ### 参考项目
 
