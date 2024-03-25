@@ -11,7 +11,7 @@ chrome.storage.local.get(["editor"], ({ editor }) => {
       (message) => {
         const debugSource = message?.data?.debugSource
         if (!debugSource) return
-        const { columnNumber, fileName, lineNumber } = debugSource
+        const { columnNumber = 0, fileName, lineNumber } = debugSource
         let url = ""
         if (editor === "webStorm") {
           url = `webstorm://open?file=${fileName}&line=${lineNumber}&column=${columnNumber}`
