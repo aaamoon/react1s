@@ -21,6 +21,7 @@ async function getCurrentTabUrl() {
 function App() {
   const [editor, setEditor] = useState<Editor>("vscode")
   const [customPath, setCustomPath] = useState<string>("")
+  const [maxDeep, setMaxDeep] = useState<number>(3)
 
   useEffect(() => {
     chrome.storage.local.get(["editor"], ({ editor }) => {
@@ -30,6 +31,9 @@ function App() {
       setCustomPath(
         customPath ?? "vscode://file/${fileName}:${lineNumber}:${columnNumber}"
       )
+    })
+    chrome.storage.local.get(["maxDeep"], ({ maxDeep }) => {
+      setMaxDeep(maxDeep ?? 3)
     })
   }, [])
 
@@ -53,9 +57,23 @@ function App() {
     window.close()
   }
 
+  const handleConfirmMaxDeep = async () => {
+    const url = new URL(await getCurrentTabUrl())
+    chrome.tabs.update({
+      url: url.href,
+      active: true
+    })
+    window.close()
+  }
+
   const handleChangeCustomPath = (e: React.ChangeEvent<HTMLInputElement>) => {
     setCustomPath(e.target.value)
     chrome.storage.local.set({ customPath: e.target.value })
+  }
+
+  const handleChangeMaxDeep = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setMaxDeep(Number(e.target.value))
+    chrome.storage.local.set({ maxDeep: Number(e.target.value) })
   }
 
   const handleGoGithub = () => {
@@ -100,6 +118,23 @@ function App() {
             </Button>
           </Box>
         ) : null}
+        <Box fontSize={20} mb={2}>
+          请选择最大深度
+        </Box>
+        <Box display="flex">
+          <Input
+            size={"sm"}
+            value={maxDeep}
+            onChange={handleChangeMaxDeep}
+          />
+          <Button
+            ml={1}
+            size={"sm"}
+            colorScheme="teal"
+            onClick={handleConfirmMaxDeep}>
+            更新
+          </Button>
+        </Box>
         <Link
           fontSize={16}
           mt={1}
