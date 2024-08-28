@@ -11,7 +11,7 @@ import {
 } from "@chakra-ui/react"
 import { useEffect, useState } from "react"
 
-type Editor = "vscode" | "vscode-insiders" | "webStorm" | "custom"
+type Editor = "vscode" | "vscode-insiders" | "webStorm" | "cursor" | "custom"
 
 async function getCurrentTabUrl() {
   const tabs = await chrome.tabs.query({ active: true, currentWindow: true })
@@ -99,6 +99,7 @@ function App() {
             <Radio value="vscode">VS Code</Radio>
             <Radio value="vscode-insiders">VS Code-insiders</Radio>
             <Radio value="webStorm">WebStorm</Radio>
+            <Radio value="cursor">Cursor</Radio>
             <Radio value="custom">自定义路径</Radio>
           </Stack>
         </RadioGroup>
