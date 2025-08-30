@@ -1,0 +1,29 @@
+{
+  "appName": {
+    "message": "React1s"
+  },
+  "appDescription": {
+    "message": "Click page elements to jump to editor"
+  },
+  "instructions": {
+    "message": "Hold"
+  },
+  "instructionsKey": {
+    "message": "⌥ Option(Alt)"
+  },
+  "instructionsAction": {
+    "message": "and left-click on page elements"
+  },
+  "selectEditor": {
+    "message": "Please select code editor"
+  },
+  "customPath": {
+    "message": "Custom Path"
+  },
+  "update": {
+    "message": "Update"
+  },
+  "selectMaxDepth": {
+    "message": "Please select max depth"
+  }
+}

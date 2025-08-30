@@ -86,10 +86,10 @@ function App() {
     <ChakraProvider>
       <Box w={350} h={150} p={4}>
         <Box mb={2}>
-          按住 <Kbd>⌥ Option(Alt)</Kbd> 同时鼠标左键点击页面元素
+          {chrome.i18n.getMessage("instructions")} <Kbd>{chrome.i18n.getMessage("instructionsKey")}</Kbd> {chrome.i18n.getMessage("instructionsAction")}
         </Box>
         <Box fontSize={20} mb={2}>
-          请选择代码编辑器
+          {chrome.i18n.getMessage("selectEditor")}
         </Box>
         <RadioGroup
           onChange={handleChangeEditor}
@@ -100,7 +100,7 @@ function App() {
             <Radio value="vscode-insiders">VS Code-insiders</Radio>
             <Radio value="webStorm">WebStorm</Radio>
             <Radio value="cursor">Cursor</Radio>
-            <Radio value="custom">自定义路径</Radio>
+            <Radio value="custom">{chrome.i18n.getMessage("customPath")}</Radio>
           </Stack>
         </RadioGroup>
         {editor === "custom" ? (
@@ -115,12 +115,12 @@ function App() {
               size={"sm"}
               colorScheme="teal"
               onClick={handleConfirmInput}>
-              更新
+              {chrome.i18n.getMessage("update")}
             </Button>
           </Box>
         ) : null}
         <Box fontSize={20} mb={2}>
-          请选择最大深度
+          {chrome.i18n.getMessage("selectMaxDepth")}
         </Box>
         <Box display="flex">
           <Input
@@ -133,7 +133,7 @@ function App() {
             size={"sm"}
             colorScheme="teal"
             onClick={handleConfirmMaxDeep}>
-            更新
+            {chrome.i18n.getMessage("update")}
           </Button>
         </Box>
         <Link

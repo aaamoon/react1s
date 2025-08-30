@@ -1,0 +1,29 @@
+{
+  "appName": {
+    "message": "React1s"
+  },
+  "appDescription": {
+    "message": "点击页面元素跳转到编辑器"
+  },
+  "instructions": {
+    "message": "按住"
+  },
+  "instructionsKey": {
+    "message": "⌥ Option(Alt)"
+  },
+  "instructionsAction": {
+    "message": "同时鼠标左键点击页面元素"
+  },
+  "selectEditor": {
+    "message": "请选择代码编辑器"
+  },
+  "customPath": {
+    "message": "自定义路径"
+  },
+  "update": {
+    "message": "更新"
+  },
+  "selectMaxDepth": {
+    "message": "请选择最大深度"
+  }
+}

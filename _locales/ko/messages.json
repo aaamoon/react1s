@@ -1,0 +1,29 @@
+{
+  "appName": {
+    "message": "React1s"
+  },
+  "appDescription": {
+    "message": "페이지 요소를 클릭하여 에디터로 이동"
+  },
+  "instructions": {
+    "message": "누른 상태에서"
+  },
+  "instructionsKey": {
+    "message": "⌥ Option(Alt)"
+  },
+  "instructionsAction": {
+    "message": "동시에 페이지 요소를 왼쪽 클릭"
+  },
+  "selectEditor": {
+    "message": "코드 에디터를 선택하세요"
+  },
+  "customPath": {
+    "message": "사용자 정의 경로"
+  },
+  "update": {
+    "message": "업데이트"
+  },
+  "selectMaxDepth": {
+    "message": "최대 깊이를 선택하세요"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "appName": {
+    "message": "React1s"
+  },
+  "appDescription": {
+    "message": "Haz clic en elementos de la página para saltar al editor"
+  },
+  "instructions": {
+    "message": "Mantén presionado"
+  },
+  "instructionsKey": {
+    "message": "⌥ Option(Alt)"
+  },
+  "instructionsAction": {
+    "message": "y haz clic izquierdo en elementos de la página"
+  },
+  "selectEditor": {
+    "message": "Por favor selecciona el editor de código"
+  },
+  "customPath": {
+    "message": "Ruta personalizada"
+  },
+  "update": {
+    "message": "Actualizar"
+  },
+  "selectMaxDepth": {
+    "message": "Por favor selecciona la profundidad máxima"
+  }
+}

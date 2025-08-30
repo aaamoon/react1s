@@ -2,7 +2,7 @@
   "name": "react1s",
   "displayName": "React1s",
   "version": "1.0.6",
-  "description": "点击页面元素跳转到编辑器",
+  "description": "__MSG_appDescription__",
   "scripts": {
     "dev": "plasmo dev",
     "build": "plasmo build",
@@ -27,6 +27,7 @@
     "typescript": "4.8.4"
   },
   "manifest": {
+    "default_locale": "zh",
     "permissions": [
       "<all_urls>",
       "tabs",

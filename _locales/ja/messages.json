@@ -1,0 +1,29 @@
+{
+  "appName": {
+    "message": "React1s"
+  },
+  "appDescription": {
+    "message": "ページ要素をクリックしてエディターにジャンプ"
+  },
+  "instructions": {
+    "message": "押しながら"
+  },
+  "instructionsKey": {
+    "message": "⌥ Option(Alt)"
+  },
+  "instructionsAction": {
+    "message": "同時にページ要素を左クリック"
+  },
+  "selectEditor": {
+    "message": "コードエディターを選択してください"
+  },
+  "customPath": {
+    "message": "カスタムパス"
+  },
+  "update": {
+    "message": "更新"
+  },
+  "selectMaxDepth": {
+    "message": "最大深度を選択してください"
+  }
+}

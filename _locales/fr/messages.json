@@ -1,0 +1,29 @@
+{
+  "appName": {
+    "message": "React1s"
+  },
+  "appDescription": {
+    "message": "Cliquez sur les éléments de la page pour accéder à l'éditeur"
+  },
+  "instructions": {
+    "message": "Maintenez"
+  },
+  "instructionsKey": {
+    "message": "⌥ Option(Alt)"
+  },
+  "instructionsAction": {
+    "message": "et cliquez gauche sur les éléments de la page"
+  },
+  "selectEditor": {
+    "message": "Veuillez sélectionner l'éditeur de code"
+  },
+  "customPath": {
+    "message": "Chemin personnalisé"
+  },
+  "update": {
+    "message": "Mettre à jour"
+  },
+  "selectMaxDepth": {
+    "message": "Veuillez sélectionner la profondeur maximale"
+  }
+}
